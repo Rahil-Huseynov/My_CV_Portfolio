@@ -1,0 +1,79 @@
+input[type=email] {
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    line-height: 1.4;
+    height: 50px;
+    width: 200px;
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    padding: 0 20px;
+    transition: all .3s ease;
+}
+input[type=text] {
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    line-height: 1.4;
+    height: 50px;
+    width: 200px;
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    padding: 0 20px;
+    transition: all .3s ease;
+}
+.contact_user_info{
+    display: grid;
+    gap: 2rem;
+}
+.contact_user_info_message_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.message{
+    height: 130px;
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    padding: 15px 20px;
+    transition: all .3s ease;
+    resize: none;
+    display: block;
+    border-radius: 2px;
+    overflow: auto;
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    line-height: 1.4;
+}
+.button_send_message{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.send_message{
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    line-height: 1.66;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s ease;
+    min-width: 170px;
+    text-align: center;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    border-radius: 2px;
+    background: #33f;
+}
+
+.ReCAPTCHA_container{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.error-captcha {
+    border: 1px solid red;
+}

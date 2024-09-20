@@ -1,0 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.nav_items {
+    cursor: pointer;
+}
+
+.link_nav {
+    text-decoration: none;
+    color: #252525;
+    transition: all .3s ease;
+}
+
+.link_nav:hover {
+    text-decoration: underline;
+    color: #337ab7;
+    transition: all .3s ease;
+}
+
+#header_hello {
+    position: sticky;
+}

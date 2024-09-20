@@ -1,34 +1,32 @@
 import photo from '../../assets/image.jpg';
 import my_cv from '../../../public/Rahil_Huseynov_CV.pdf';
-
+import './Hello.css'
 const Hello = () => {
     return (
         <>
-            <header>
+            <header id='header_hello'>
                 <div className='header_container'>
                     <div className='my_name_container'>
-                        <p className='my_name'>Rahil Huseynov</p>
+                        <p className='my_name'>Rahil Huseynov<span className='point'>.</span></p>
                     </div>
                     <div>
                         <ul className='navbar_items'>
-                            <li>HELLO</li>
-                            <li>SKILLS</li>
-                            <li>EXPERIENCE</li>
-                            <li>EDUCATION</li>
-                            <li>PORTFOLIO</li>
-                            <li>FEEDBACK</li>
-                            <li>CONTACT ME</li>
+                            <li className='nav_items'><a className='link_nav' href="#Hello">HELLO</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#SKILLS">SKILLS</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#EDUCATION">EDUCATION</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#PORTFOLIO">PORTFOLIO</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#CONTACTME">CONTACT ME</a></li>
                         </ul>
                     </div>
                 </div>
             </header>
             <div className='divide'></div>
 
-            <section>
+            <section id='Hello'>
                 <div className='first_section_container'>
                     <div className='section_my_about_container'>
                         <div>
-                            <h1 className='my_about_header'>I am Rahil Huseynov</h1>
+                            <h1 className='my_about_header'>I am Rahil Huseynov<span className='point'>.</span></h1>
                             <p className='my_about_text'>
                                 A motivated and dedicated front-end developer intern looking to use my skills in JavaScript, TypeScript, Redux, HTML, CSS, SCSS, and React to contribute to dynamic projects and further develop my expertise in web development.
                             </p>

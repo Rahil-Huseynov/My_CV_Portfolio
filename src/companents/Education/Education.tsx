@@ -4,7 +4,7 @@ import AACU from '../../assets/AACU.png';
 const Education = () => {
     return (
         <>
-            <section>
+            <section id='EDUCATION'>
                 <div className='skills_container'>
                     <div className='skills_header_container'>
                         <div>

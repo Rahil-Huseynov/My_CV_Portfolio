@@ -29,7 +29,7 @@ const Portfolio = () => {
     };
     return (
         <>
-            <section>
+            <section id='PORTFOLIO'>
                 <div className='skills_container'>
                     <div className='skills_header_container'>
                         <div>

@@ -11,7 +11,7 @@ import skills from '../../assets/skills.png';
 const Skills = () => {
     return (
         <>
-            <section>
+            <section id='SKILLS'>
                 <div className='skills_container'>
                     <div className='skills_header_container'>
                         <div>
