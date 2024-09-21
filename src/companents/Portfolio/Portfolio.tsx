@@ -3,6 +3,7 @@ import Project from '../../assets/project.png';
 import MyProject from '../../assets/Myproject.png';
 import { useGetUserReposQuery } from '../../services/GIthubAPI';
 import { useState } from 'react';
+import './Portfolio.css'
 
 interface Repo {
     id: number;
