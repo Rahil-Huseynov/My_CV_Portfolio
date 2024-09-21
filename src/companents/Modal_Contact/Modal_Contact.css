@@ -118,7 +118,7 @@
 
 @media only screen and (min-width: 480px) {
     .modal_content {
-        width: 400px;
+        width: 600px;
         overflow: auto;
     }
 
@@ -128,14 +128,10 @@
 }
 
 @media only screen and (min-width: 360px) {
-    .modal_overlay {
-        overflow: auto;
-    }
-
     .modal_content {
         width: 300px;
         overflow: auto;
-        height: 700px;
+        height: 600px;
     }
 
     .message_Modal {
@@ -148,5 +144,35 @@
 
     .button_send_message_modal_container {
         display: grid;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .modal_content {
+        width: 600px;
+        overflow: auto;
+        height: 600px;
+    }
+
+    .message_Modal {
+        width: 250px;
+    }
+
+    .button_send_message_modal_container {
+        display: flex;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .modal_content {
+        width: 800px;
+        overflow: auto;
+        height: 600px;
+    }
+
+    .message_Modal {
+        width: 300px;
+    }
+
+    .button_send_message_modal_container {
+        display: flex;
     }
 }
