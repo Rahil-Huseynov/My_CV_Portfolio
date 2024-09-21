@@ -57,21 +57,21 @@ const Portfolio = () => {
     return (
         <>
             <section id='PORTFOLIO'>
-                <div className='skills_container'>
-                    <div className='skills_header_container'>
+                <div className='portfolio_container'>
+                    <div className='Portfolio_header_container'>
                         <div>
-                            <img className='skills_icon' src={portfolio} alt="" />
+                            <img className='portfolio_icon' src={portfolio} alt="" />
                         </div>
                         <div>
-                            <h2 className='skills'>Portfolio<span className='point'>.</span></h2>
+                            <h2 className='portfolio_word'>Portfolio<span className='point'>.</span></h2>
                         </div>
                     </div>
-                    <div className='skills_header_container'>
+                    <div className='Portfolio_header_container'>
                         <div>
-                            <img className='skills_icon' src={MyProject} alt="" />
+                            <img className='portfolio_icon' src={MyProject} alt="" />
                         </div>
                         <div>
-                            <h2 className='skills'>My Project<span className='point'>.</span></h2>
+                            <h2 className='portfolio_word'>My Project<span className='point'>.</span></h2>
                         </div>
                     </div>
                 </div>
