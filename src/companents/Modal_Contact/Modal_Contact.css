@@ -1,0 +1,115 @@
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal_overlay.active {
+    visibility: visible;
+    /* opacity: 1; */
+}
+
+.modal_content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    animation: slideDown 0.5s ease-out;
+}
+
+.close_button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Modal_header_word {
+    font-weight: 700;
+    font-family: Lato, sans-serif;
+    font-size: 36px;
+    line-height: 1.25;
+    color: inherit;
+    text-align: left;
+}
+
+.Modal_header_about {
+    font-size: 16px;
+    line-height: 1.56;
+    font-family: Roboto, sans-serif;
+    color: #666666;
+    text-align: left;
+    white-space: normal;
+}
+
+.message_Modal {
+    height: 130px;
+    width: 400px;
+    border: 1px solid #e3e3e3;
+    padding: 15px 20px;
+    transition: all .3s ease;
+    resize: none;
+    display: block;
+    border-radius: 2px;
+    overflow: auto;
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    line-height: 1.4;
+
+}
+
+.button_send_message_modal_container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.send_message {
+    box-shadow: 10px 5px 5px rgba(51, 51, 255, .2);
+}
+
+.close_modal_button {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    line-height: 1.66;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s ease;
+    min-width: 170px;
+    text-align: center;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    border-radius: 2px;
+    background: rgb(230, 7, 7);
+    box-shadow: 10px 5px 5px rgba(51, 51, 255, .2);
+}

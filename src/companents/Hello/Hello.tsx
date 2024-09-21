@@ -1,7 +1,20 @@
 import photo from '../../assets/image.jpg';
 import my_cv from '../../../public/Rahil_Huseynov_CV.pdf';
 import './Hello.css'
-const Hello = () => {
+import { useState } from 'react';
+import Modal_Contact from '../Modal_Contact/Modal_Contact';
+
+const Hello: React.FC = () => {
+    const [showModal, setShowModal] = useState<boolean>(false);
+
+    const handleOpenModal = (): void => {
+        setShowModal(true);
+    };
+
+    const handleCloseModal = (): void => {
+        setShowModal(false);
+    };
+
     return (
         <>
             <header id='header_hello'>
@@ -45,7 +58,7 @@ const Hello = () => {
                                 </div>
                             </div>
                             <div className='download_container'>
-                                <button className='contact_me'>CONTACT ME</button>
+                                <button className='contact_me' onClick={handleOpenModal}>CONTACT ME</button>
                                 <a className='Download_CV' href={my_cv} download>Download CV</a>
                             </div>
                         </div>
@@ -55,6 +68,8 @@ const Hello = () => {
                     </div>
                 </div>
             </section>
+            {showModal && <Modal_Contact onClose={handleCloseModal} isActive={showModal} />}
+
             <div className='divide'></div>
         </>
     )
