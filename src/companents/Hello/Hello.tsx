@@ -28,7 +28,7 @@ const Hello: React.FC = () => {
         } else {
             document.body.classList.remove('no-scroll');
         }
-    }, [showModal,isNavbarOpen]);
+    }, [showModal, isNavbarOpen]);
     return (
         <>
             <header id='header_hello'>
@@ -45,21 +45,27 @@ const Hello: React.FC = () => {
                             <li className='nav_items'><a className='link_nav' href="#CONTACTME">CONTACT ME</a></li>
                         </ul>
                     </div>
-                    <div className='burger' onClick={toggleNavbar}>
-                        <img className='burger_item' src={burger} alt="burger" />
-                    </div>
-                    <div className={`navbar_container_mobile ${isNavbarOpen ? 'open' : 'close'}`}>
-                        <div className='close_navbar_mobile' onClick={toggleNavbar}>
-                            <p className='close_icon'>&times;</p>
+                    <div className='burger_container'>
+                        <div className={`'burger' ${!isNavbarOpen ? 'open_burger' : 'close_burger'}`} onClick={toggleNavbar}>
+                            <img className='burger_item' src={burger} alt="burger" />
                         </div>
-                        <div>
-                            <ul className='navbar_items_mobile'>
-                                <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#Hello">HELLO</a></li>
-                                <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#SKILLS">SKILLS</a></li>
-                                <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#EDUCATION">EDUCATION</a></li>
-                                <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#PORTFOLIO">PORTFOLIO</a></li>
-                                <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#CONTACTME">CONTACT ME</a></li>
-                            </ul>
+                    </div>
+                    <div className={` ${!isNavbarOpen ? 'close' : 'open'}`}>
+                        <div className={`navbar_container_mobile ${isNavbarOpen ? 'open' : 'close'}`}>
+                            <div className='navbar_container_items_mobile'>
+                                <div className='close_navbar_mobile' onClick={toggleNavbar}>
+                                    <p className='close_icon'>&times;</p>
+                                </div>
+                                <div>
+                                    <ul className='navbar_items_mobile'>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#Hello">HELLO</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#SKILLS">SKILLS</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#EDUCATION">EDUCATION</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#PORTFOLIO">PORTFOLIO</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#CONTACTME">CONTACT ME</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

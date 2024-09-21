@@ -1,12 +1,60 @@
-@media only screen and (max-width: 480px) {
-.skills_container{
-    display: grid;
+@media only screen and (min-width: 360px) {
+    .skills_container {
+        display: grid;
+    }
+
+    .my_skills_about {
+        width: 250px;
+    }
+
+    .all_my_skills_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: .5rem;
+    }
 }
-.my_skills_about{
-    width: 250px;
+
+@media only screen and (min-width: 480px) {
+    .skills_container {
+        display: grid;
+    }
+
+    .my_skills_about {
+        width: 250px;
+    }
+
+    .all_my_skills_container {
+        display: grid;
+        place-items: center;
+    }
 }
-.all_my_skills_container{
-    display: grid;
-    place-items: center;
+
+@media only screen and (min-width: 720px) {
+    .skills_container {
+        display: grid;
+    }
+
+    .my_skills_about {
+        width: 250px;
+    }
+
+    .all_my_skills_container {
+        display: grid;
+        place-items: center;
+    }
 }
+
+@media only screen and (min-width: 900px) {
+    .skills_container {
+        display: flex;
+    }
+
+    .my_skills_about {
+        width: 250px;
+    }
+
+    .all_my_skills_container {
+        display: grid;
+    }
 }

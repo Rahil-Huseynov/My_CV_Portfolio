@@ -284,3 +284,7 @@
   box-shadow: 10px 5px 5px rgba(1, 1, 158, 0.2);
   transition: all .3s ease;
 }
+
+button:hover{
+  cursor: pointer;
+}

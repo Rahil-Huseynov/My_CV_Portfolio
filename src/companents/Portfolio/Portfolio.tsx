@@ -17,6 +17,20 @@ const Portfolio = () => {
     const [currentIndex, setCurrentIndex] = useState<number>(0);
     const itemsPerPage = 3;
     const itemsPerPagemobile = 1;
+    const itemsPerPagemobile720 = 2;
+
+    
+    const nextRepos720 = () => {
+        if (currentIndex + itemsPerPage < repos.length) {
+            setCurrentIndex((prevIndex) => prevIndex + itemsPerPagemobile720);
+        }
+    };
+
+    const prevRepos720 = () => {
+        if (currentIndex - itemsPerPage >= 0) {
+            setCurrentIndex((prevIndex) => prevIndex - itemsPerPagemobile720);
+        }
+    };
 
     const nextRepos = () => {
         if (currentIndex + itemsPerPage < repos.length) {
@@ -31,13 +45,13 @@ const Portfolio = () => {
     };
     const nextRepos_mobile = () => {
         if (currentIndex + itemsPerPagemobile < repos.length) {
-            setCurrentIndex((prevIndex) => prevIndex + itemsPerPage);
+            setCurrentIndex((prevIndex) => prevIndex + itemsPerPagemobile);
         }
     };
 
     const prevRepos_mobile = () => {
         if (currentIndex - itemsPerPagemobile >= 0) {
-            setCurrentIndex((prevIndex) => prevIndex - itemsPerPage);
+            setCurrentIndex((prevIndex) => prevIndex - itemsPerPagemobile);
         }
     };
     return (
@@ -64,6 +78,21 @@ const Portfolio = () => {
                 <div>
                     <div className='all_project_container' id='desktop_all_project_container'>
                         {repos.slice(currentIndex, currentIndex + itemsPerPage).map((repo: Repo) => (
+                            <div key={repo.id} className='project_container'>
+                                <img className='project_img' src={Project} alt="" />
+                                <h2>{repo.name}</h2>
+                                <h4>{repo.created_at.split("T")[0]}</h4>
+
+                                <p>
+                                    <a className='visit_github' href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                                        Visit Repository
+                                    </a>
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className='all_project_container mobile_all_project_container720' id='mobile_all_project_container720'>
+                        {repos.slice(currentIndex, currentIndex + itemsPerPagemobile720).map((repo: Repo) => (
                             <div key={repo.id} className='project_container'>
                                 <img className='project_img' src={Project} alt="" />
                                 <h2>{repo.name}</h2>
@@ -105,6 +134,14 @@ const Portfolio = () => {
                             &laquo; Previous
                         </button>
                         <button className='next' onClick={nextRepos_mobile} style={{ display: currentIndex + itemsPerPage >= repos.length ? 'none' : 'block' }}>
+                            Next &raquo;
+                        </button>
+                    </div>
+                    <div className='pagination' id='pagination_mobile720'>
+                        <button className='previous' onClick={prevRepos720} style={{ display: currentIndex === 0 ? 'none' : 'block' }}>
+                            &laquo; Previous
+                        </button>
+                        <button className='next' onClick={nextRepos720} style={{ display: currentIndex + itemsPerPage >= repos.length ? 'none' : 'block' }}>
                             Next &raquo;
                         </button>
                     </div>

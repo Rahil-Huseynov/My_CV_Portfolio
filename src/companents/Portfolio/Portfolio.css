@@ -13,7 +13,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) {
     .all_project_container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -30,6 +30,7 @@
         display: block;
 
     }
+
     #pagination_desktop {
         display: none;
     }
@@ -39,3 +40,128 @@
 
     }
 }
+
+
+@media only screen and (min-width: 360px) {
+    .all_project_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    #desktop_all_project_container {
+        display: none;
+    }
+
+    #mobile_all_project_container {
+        display: block;
+
+    }
+
+    #pagination_desktop {
+        display: none;
+    }
+
+    #pagination_mobile {
+        display: flex;
+
+    }
+}
+
+#mobile_all_project_container720 {
+    display: none;
+}
+
+#pagination_mobile720 {
+    display: none;
+}
+
+#mobile_all_project_container720 {
+    display: none;
+}
+
+#pagination_mobile720 {
+    display: none;
+}
+
+@media only screen and (min-width: 720px) {
+    .all_project_container {
+        display: none;
+
+    }
+
+    #mobile_all_project_container {
+        display: none;
+
+    }
+
+    #pagination_desktop {
+        display: none;
+    }
+
+    #pagination_mobile {
+        display: none;
+
+    }
+
+    #pagination_mobile720 {
+        display: flex;
+    }
+
+    #mobile_all_project_container720 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 1130px) {
+    .all_project_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    #desktop_all_project_container {
+        display: none;
+    }
+  
+    #mobile_all_project_container {
+        display: none;
+
+    }
+
+    #mobile_all_project_container720 {
+        display: none;
+    }
+
+    #pagination_desktop {
+        display: flex;
+    }
+
+    #pagination_mobile {
+        display: none;
+
+    }
+
+    #pagination_mobile720 {
+        display: none;
+    }
+
+    #desktop_all_project_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+}
+

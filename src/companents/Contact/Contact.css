@@ -9,6 +9,7 @@ input[type=email] {
     padding: 0 20px;
     transition: all .3s ease;
 }
+
 input[type=text] {
     font-size: 14px;
     font-family: Lato, sans-serif;
@@ -20,17 +21,20 @@ input[type=text] {
     padding: 0 20px;
     transition: all .3s ease;
 }
-.contact_user_info{
+
+.contact_user_info {
     display: grid;
     gap: 2rem;
 }
-.contact_user_info_message_container{
+
+.contact_user_info_message_container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
 }
-.message{
+
+.message {
     height: 130px;
     width: 100%;
     border: 1px solid #e3e3e3;
@@ -44,13 +48,14 @@ input[type=text] {
     font-family: Lato, sans-serif;
     line-height: 1.4;
 }
-.button_send_message{
+
+.button_send_message {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
 }
 
-.send_message{
+.send_message {
     cursor: pointer;
     font-weight: 700;
     font-family: Lato, sans-serif;
@@ -68,7 +73,7 @@ input[type=text] {
     background: #33f;
 }
 
-.ReCAPTCHA_container{
+.ReCAPTCHA_container {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
@@ -78,16 +83,91 @@ input[type=text] {
     border: 1px solid red;
 }
 
-@media only screen and (max-width: 480px) {
-.contact_user_info_message_container{
-    display: grid;
+@media only screen and (min-width: 480px) {
+    .contact_user_info_message_container {
+        display: grid;
+    }
+
+    .contact_user_info_message_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .message {
+        width: 300px;
+    }
+
+    .skills_container {
+        display: grid;
+    }
 }
-.contact_user_info_message_container{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    place-items: center;
+
+
+@media only screen and (min-width: 360px) {
+    .contact_user_info_message_container {
+        display: grid;
+    }
+
+    .contact_user_info_message_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .message {
+        width: 300px;
+    }
+
+    .skills_container {
+        display: grid;
+    }
+
 }
-.message{
-    width: 300px;
+
+
+@media only screen and (min-width: 720px) {
+    .contact_user_info_message_container {
+        display: grid;
+    }
+
+    .skills_header_container {
+        display: flex;
+        gap: 1;
+        justify-content: center;
+    }
+
+    .contact_user_info_message_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
+    .message {
+        width: 300px;
+    }
+
+    .skills_container {
+        display: grid;
+    }
 }
+
+@media only screen and (min-width: 1130px) {
+    .contact_user_info_message_container {
+        display: grid;
+    }
+
+    .contact_user_info_message_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
+    .message {
+        width: 300px;
+    }
+
+    .skills_container {
+        display: flex;
+    }
 }
