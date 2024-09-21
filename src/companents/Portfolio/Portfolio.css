@@ -4,3 +4,38 @@
     font-family: "Caveat", cursive;
     padding: 1rem;
 }
+
+#mobile_all_project_container {
+    display: none;
+}
+
+#pagination_mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .all_project_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    #desktop_all_project_container {
+        display: none;
+    }
+
+    #mobile_all_project_container {
+        display: block;
+
+    }
+    #pagination_desktop {
+        display: none;
+    }
+
+    #pagination_mobile {
+        display: flex;
+
+    }
+}

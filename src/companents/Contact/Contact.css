@@ -77,3 +77,17 @@ input[type=text] {
 .error-captcha {
     border: 1px solid red;
 }
+
+@media only screen and (max-width: 480px) {
+.contact_user_info_message_container{
+    display: grid;
+}
+.contact_user_info_message_container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+}
+.message{
+    width: 300px;
+}
+}

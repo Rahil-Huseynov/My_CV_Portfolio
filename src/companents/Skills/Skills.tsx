@@ -6,6 +6,7 @@ import Typescript from '../../assets/Typescript.png';
 import ReactIcon from '../../assets/React.png';
 import Redux from '../../assets/Redux.svg';
 import skills from '../../assets/skills.png';
+import './Skills.css'
 
 
 const Skills = () => {

@@ -115,3 +115,12 @@
     background: rgb(230, 7, 7);
     box-shadow: 10px 5px 5px rgba(51, 51, 255, .2);
 }
+
+@media only screen and (max-width: 480px) {
+    .modal_content{
+        width: 400px;
+    }
+    .message_Modal{
+        width: 300px;
+    }
+}

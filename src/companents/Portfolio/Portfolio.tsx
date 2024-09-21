@@ -16,6 +16,7 @@ const Portfolio = () => {
     const { data: repos = [] } = useGetUserReposQuery(username);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
     const itemsPerPage = 3;
+    const itemsPerPagemobile = 1;
 
     const nextRepos = () => {
         if (currentIndex + itemsPerPage < repos.length) {
@@ -25,6 +26,17 @@ const Portfolio = () => {
 
     const prevRepos = () => {
         if (currentIndex - itemsPerPage >= 0) {
+            setCurrentIndex((prevIndex) => prevIndex - itemsPerPage);
+        }
+    };
+    const nextRepos_mobile = () => {
+        if (currentIndex + itemsPerPagemobile < repos.length) {
+            setCurrentIndex((prevIndex) => prevIndex + itemsPerPage);
+        }
+    };
+
+    const prevRepos_mobile = () => {
+        if (currentIndex - itemsPerPagemobile >= 0) {
             setCurrentIndex((prevIndex) => prevIndex - itemsPerPage);
         }
     };
@@ -50,7 +62,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div>
-                    <div className='all_project_container'>
+                    <div className='all_project_container' id='desktop_all_project_container'>
                         {repos.slice(currentIndex, currentIndex + itemsPerPage).map((repo: Repo) => (
                             <div key={repo.id} className='project_container'>
                                 <img className='project_img' src={Project} alt="" />
@@ -65,11 +77,34 @@ const Portfolio = () => {
                             </div>
                         ))}
                     </div>
-                    <div className='pagination'>
+                    <div className='all_project_container' id='mobile_all_project_container'>
+                        {repos.slice(currentIndex, currentIndex + itemsPerPagemobile).map((repo: Repo) => (
+                            <div key={repo.id} className='project_container'>
+                                <img className='project_img' src={Project} alt="" />
+                                <h2>{repo.name}</h2>
+                                <h4>{repo.created_at.split("T")[0]}</h4>
+
+                                <p>
+                                    <a className='visit_github' href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                                        Visit Repository
+                                    </a>
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className='pagination' id='pagination_desktop'>
                         <button className='previous' onClick={prevRepos} style={{ display: currentIndex === 0 ? 'none' : 'block' }}>
                             &laquo; Previous
                         </button>
                         <button className='next' onClick={nextRepos} style={{ display: currentIndex + itemsPerPage >= repos.length ? 'none' : 'block' }}>
+                            Next &raquo;
+                        </button>
+                    </div>
+                    <div className='pagination' id='pagination_mobile'>
+                        <button className='previous' onClick={prevRepos_mobile} style={{ display: currentIndex === 0 ? 'none' : 'block' }}>
+                            &laquo; Previous
+                        </button>
+                        <button className='next' onClick={nextRepos_mobile} style={{ display: currentIndex + itemsPerPage >= repos.length ? 'none' : 'block' }}>
                             Next &raquo;
                         </button>
                     </div>
