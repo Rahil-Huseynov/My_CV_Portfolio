@@ -1,5 +1,9 @@
 import photo from '../../assets/image.jpg';
 import burger from '../../assets/burger.png';
+import instagram from '../../assets/instagram.png';
+import github from '../../assets/github.png';
+import twitter from '../../assets/twitter.png';
+import linkedin from '../../assets/linkedin.png';
 import my_cv from '../../../public/Rahil_Huseynov_CV.pdf';
 import './Hello.css'
 import { useEffect, useState } from 'react';
@@ -82,16 +86,29 @@ const Hello: React.FC = () => {
                             </p>
                             <div className='about_contact_container'>
                                 <div className='about_contact'>
-                                    <p className='contact'>PHONE</p>
-                                    <p className='contact'>EMAIL</p>
-                                    <p className='contact'>ADDRESS</p>
-                                    <p className='contact'>SOCIAL</p>
-                                </div>
-                                <div className='about_contact'>
-                                    <p className='contact_answer'>+994(51)-710-82-46</p>
-                                    <p className='contact_answer'>huseynov.rahil.05@gmail.com</p>
-                                    <p className='contact_answer'>-</p>
-                                    <p className='contact_answer'>-</p>
+                                    <div className='contact_data'>
+                                        <p className='contact'>PHONE</p>
+                                        <p className='contact_answer'>+994(51)-710-82-46</p>
+                                    </div>
+                                    <div className='contact_data'>
+                                        <p className='contact'>EMAIL</p>
+                                        <p className='contact_answer'>huseynov.rahil.05@gmail.com</p>
+                                    </div>
+                                    <div className='contact_data'>
+                                        <p className='contact'>ADDRESS</p>
+                                        <p className='contact_answer'>Baku, Azerbaijan</p>
+                                    </div>
+                                    <div className='contact_data'>
+                                        <p className='contact'>SOCIAL</p>
+                                        <div className='about_contact'>
+                                            <div className='sosial_icon_container'>
+                                                <a href="https://www.instagram.com/rahil_huseynov/" target="_blank"><img className='sosial_icon' src={instagram} alt="instagram" /></a>
+                                                <a href="https://www.linkedin.com/in/rahil-huseynov/" target="_blank"><img className='sosial_icon' src={linkedin} alt="linkedin" /></a>
+                                                <a href="https://github.com/Rahil-Huseynov/" target="_blank"><img className='sosial_icon' src={github} alt="github" /></a>
+                                                <a href="https://x.com/huseynov_rahil" target="_blank"><img className='sosial_icon' src={twitter} alt="x" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className='download_container'>
@@ -119,16 +136,29 @@ const Hello: React.FC = () => {
                             </p>
                             <div className='about_contact_container'>
                                 <div className='about_contact'>
-                                    <p className='contact'>PHONE</p>
-                                    <p className='contact'>EMAIL</p>
-                                    <p className='contact'>ADDRESS</p>
-                                    <p className='contact'>SOCIAL</p>
-                                </div>
-                                <div className='about_contact'>
-                                    <p className='contact_answer'>+994(51)-710-82-46</p>
-                                    <p className='contact_answer'>huseynov.rahil.05@gmail.com</p>
-                                    <p className='contact_answer'>-</p>
-                                    <p className='contact_answer'>-</p>
+                                    <div className='contact_data'>
+                                        <p className='contact'>PHONE</p>
+                                        <p className='contact_answer'>+994(51)-710-82-46</p>
+                                    </div>
+                                    <div className='contact_data'>
+                                        <p className='contact'>EMAIL</p>
+                                        <p className='contact_answer'>huseynov.rahil.05@gmail.com</p>
+                                    </div>
+                                    <div className='contact_data'>
+                                        <p className='contact'>ADDRESS</p>
+                                        <p className='contact_answer'>Baku, Azerbaijan</p>
+                                    </div>
+                                    <div className='contact_data'>
+                                        <p className='contact'>SOCIAL</p>
+                                        <div className='about_contact'>
+                                            <div className='sosial_icon_container'>
+                                                <a href="https://www.instagram.com/rahil_huseynov/" target="_blank"><img className='sosial_icon' src={instagram} alt="instagram" /></a>
+                                                <a href="https://www.linkedin.com/in/rahil-huseynov/" target="_blank"><img className='sosial_icon' src={linkedin} alt="linkedin" /></a>
+                                                <a href="https://github.com/Rahil-Huseynov/" target="_blank"><img className='sosial_icon' src={github} alt="github" /></a>
+                                                <a href="https://x.com/huseynov_rahil" target="_blank"><img className='sosial_icon' src={twitter} alt="x" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className='download_container'>

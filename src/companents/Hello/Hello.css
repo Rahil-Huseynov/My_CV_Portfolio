@@ -17,7 +17,19 @@ html {
     color: #337ab7;
     transition: all .3s ease;
 }
-
+.contact_data{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+.sosial_icon{
+  width: 20px;
+}
+.sosial_icon_container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 #header_hello {
     position: sticky;
 }
