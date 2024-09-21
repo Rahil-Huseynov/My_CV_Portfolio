@@ -116,11 +116,37 @@
     box-shadow: 10px 5px 5px rgba(51, 51, 255, .2);
 }
 
-@media only screen and (max-width: 480px) {
-    .modal_content{
+@media only screen and (min-width: 480px) {
+    .modal_content {
         width: 400px;
+        overflow: auto;
     }
-    .message_Modal{
+
+    .message_Modal {
         width: 300px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .modal_overlay {
+        overflow: auto;
+    }
+
+    .modal_content {
+        width: 300px;
+        overflow: auto;
+        height: 700px;
+    }
+
+    .message_Modal {
+        width: 300px;
+    }
+
+    .message_Modal {
+        width: 200px;
+    }
+
+    .button_send_message_modal_container {
+        display: grid;
     }
 }
