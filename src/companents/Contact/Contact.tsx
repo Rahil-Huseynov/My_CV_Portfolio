@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
                         </div>
                         <div>
                             <div className='ReCAPTCHA_container'>
-                                    <ReCAPTCHA className={captchaError ? 'error-captcha' : ''} sitekey="6LfJmUoqAAAAAJZUv_PUI4hHkWEDtDkz9nC8-CNj" onChange={handleCaptcha} />
+                                    <ReCAPTCHA className={captchaError ? 'error-captcha' : ''} sitekey="6Le32koqAAAAAIyK0ZAx3177bCNWM5GmJrAqoNlL" onChange={handleCaptcha} />
                             </div>
                             <div className='button_send_message'>
                                 <button type='submit' className='send_message'>{isSubmitting ? 'Sending...' : 'Send Message'}</button>
