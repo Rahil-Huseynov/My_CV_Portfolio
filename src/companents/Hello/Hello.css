@@ -127,7 +127,14 @@ html {
     }
 
     .photo {
-        width: 360px;
+        width: 330px;
+    }
+
+    .download_container {
+      padding-top: 2rem;
+      display: grid;
+      place-items: center;
+      gap: 2rem;
     }
 
     .first_section_container {
@@ -139,7 +146,7 @@ html {
     }
 
     .my_about_text {
-        width: 360px;
+        width: 330px;
     }
 
     .navbar_container {
@@ -480,7 +487,6 @@ html {
         font-size: 16px;
         line-height: 1.56;
         font-family: Roboto, sans-serif;
-        width: 450px;
         color: #252525;
       }
       
