@@ -20,14 +20,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* opacity: 0; */
-    /* visibility: hidden; */
     transition: opacity 0.3s ease-in-out;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
+
 .modal_overlay.active {
     visibility: visible;
-    /* opacity: 1; */
 }
 
 .modal_content {

@@ -1,7 +1,7 @@
 import photo from '../../assets/image.jpg';
 import my_cv from '../../../public/Rahil_Huseynov_CV.pdf';
 import './Hello.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal_Contact from '../Modal_Contact/Modal_Contact';
 
 const Hello: React.FC = () => {
@@ -14,7 +14,13 @@ const Hello: React.FC = () => {
     const handleCloseModal = (): void => {
         setShowModal(false);
     };
-
+    useEffect(() => {
+        if (showModal) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [showModal]);
     return (
         <>
             <header id='header_hello'>
