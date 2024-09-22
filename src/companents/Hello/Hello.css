@@ -185,7 +185,14 @@ html {
     .navbar_container_mobile.open {
         display: grid;
         min-height: 110vh;
+        animation-name: opennavbar;
+        animation-duration: .3s;
         opacity: 1;
+    }
+
+    @keyframes opennavbar {
+      0%   {opacity: 0;}
+      100% {opacity: 1;}
     }
 
     .navbar_container_mobile.close {
@@ -297,11 +304,17 @@ html {
     }
 
     .navbar_container_mobile.open {
-        display: grid;
-        min-height: 110vh;
-        opacity: 1;
-    }
+      display: grid;
+      min-height: 110vh;
+      animation-name: opennavbar;
+      animation-duration: .3s;
+      opacity: 1;
+  }
 
+  @keyframes opennavbar {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
     .navbar_container_mobile.close {
         display: none;
         max-height: 0;
