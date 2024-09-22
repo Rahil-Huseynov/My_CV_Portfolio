@@ -1,56 +1,64 @@
+.slider {
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px ;
+}
+
+.slider-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project_container {
-    background-color: #bdbcbc3a;
-    box-shadow: 10px 5px 5px rgba(51, 51, 255, .2);
-    font-family: "Caveat", cursive;
-    padding: 1rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#mobile_all_project_container {
-    display: none;
+.project_img {
+    border-radius: 10px;
 }
 
-.date_project{
+.date_project_items {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.visit_github {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project_img {
+    border-radius: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #007bff;
+}
+
+.date_project {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.date_project_items{
+
+.date_project_items {
     display: flex;
     align-items: center;
     gap: .3rem;
 }
 
-#pagination_mobile {
-    display: none;
-}
-
 @media only screen and (min-width: 480px) {
-    .all_project_container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        place-items: center;
-        gap: 2rem;
-        padding-top: 2rem;
-    }
-
-    #desktop_all_project_container {
-        display: none;
-    }
-
-    #mobile_all_project_container {
-        display: block;
-
-    }
-
-    #pagination_desktop {
-        display: none;
-    }
-
-    #pagination_mobile {
-        display: flex;
-
-    }
-
     .portfolio_container {
         display: flex;
         justify-content: space-around;
@@ -76,32 +84,6 @@
 
 
 @media only screen and (min-width: 360px) {
-    .all_project_container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        place-items: center;
-        gap: 2rem;
-        padding-top: 2rem;
-    }
-
-    #desktop_all_project_container {
-        display: none;
-    }
-
-    #mobile_all_project_container {
-        display: block;
-
-    }
-
-    #pagination_desktop {
-        display: none;
-    }
-
-    #pagination_mobile {
-        display: flex;
-
-    }
-
     .portfolio_container {
         display: flex;
         justify-content: space-around;
@@ -123,60 +105,28 @@
         font-family: Lato, sans-serif;
 
     }
+    .slider {
+        padding-bottom: 60px ;
+    }
+    
+}
+
+.slider-items {
+    display: grid;
+    place-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.slider-items:hover {
+    transform: scale(1.1);
 }
 
 #PORTFOLIO {
     padding-top: 1rem;
 }
 
-#mobile_all_project_container720 {
-    display: none;
-}
-
-#pagination_mobile720 {
-    display: none;
-}
-
-#mobile_all_project_container720 {
-    display: none;
-}
-
-#pagination_mobile720 {
-    display: none;
-}
-
 @media only screen and (min-width: 720px) {
-    .all_project_container {
-        display: none;
-
-    }
-
-    #mobile_all_project_container {
-        display: none;
-
-    }
-
-    #pagination_desktop {
-        display: none;
-    }
-
-    #pagination_mobile {
-        display: none;
-
-    }
-
-    #pagination_mobile720 {
-        display: flex;
-    }
-
-    #mobile_all_project_container720 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        place-items: center;
-        gap: 2rem;
-        padding-top: 2rem;
-    }
-
 
     .portfolio_container {
         display: flex;
@@ -201,50 +151,4 @@
 
     }
 
-
-}
-
-
-@media only screen and (min-width: 1130px) {
-    .all_project_container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        place-items: center;
-        gap: 2rem;
-        padding-top: 2rem;
-    }
-
-    #desktop_all_project_container {
-        display: none;
-    }
-
-    #mobile_all_project_container {
-        display: none;
-
-    }
-
-    #mobile_all_project_container720 {
-        display: none;
-    }
-
-    #pagination_desktop {
-        display: flex;
-    }
-
-    #pagination_mobile {
-        display: none;
-
-    }
-
-    #pagination_mobile720 {
-        display: none;
-    }
-
-    #desktop_all_project_container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        place-items: center;
-        gap: 2rem;
-        padding-top: 2rem;
-    }
 }
