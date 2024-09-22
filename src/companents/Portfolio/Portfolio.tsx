@@ -10,6 +10,7 @@ interface Repo {
     name: string;
     html_url: string;
     created_at: string
+    updated_at: string
 }
 const Portfolio = () => {
     const username = 'Rahil-Huseynov';
@@ -19,7 +20,7 @@ const Portfolio = () => {
     const itemsPerPagemobile = 1;
     const itemsPerPagemobile720 = 2;
 
-    
+
     const nextRepos720 = () => {
         if (currentIndex + itemsPerPage < repos.length) {
             setCurrentIndex((prevIndex) => prevIndex + itemsPerPagemobile720);
@@ -81,8 +82,13 @@ const Portfolio = () => {
                             <div key={repo.id} className='project_container'>
                                 <img className='project_img' src={Project} alt="" />
                                 <h2>{repo.name}</h2>
-                                <h4>{repo.created_at.split("T")[0]}</h4>
-
+                                <div className='date_project'>
+                                    <div className='date_project_items'>
+                                        <h4>{repo.created_at.split("T")[0]}</h4>
+                                        <span>/</span>
+                                        <h4>{repo.updated_at.split("T")[0]}</h4>
+                                    </div>
+                                </div>
                                 <p>
                                     <a className='visit_github' href={repo.html_url} target="_blank" rel="noopener noreferrer">
                                         Visit Repository
@@ -96,8 +102,13 @@ const Portfolio = () => {
                             <div key={repo.id} className='project_container'>
                                 <img className='project_img' src={Project} alt="" />
                                 <h2>{repo.name}</h2>
-                                <h4>{repo.created_at.split("T")[0]}</h4>
-
+                                <div className='date_project'>
+                                    <div className='date_project_items'>
+                                        <h4>{repo.created_at.split("T")[0]}</h4>
+                                        <span>/</span>
+                                        <h4>{repo.updated_at.split("T")[0]}</h4>
+                                    </div>
+                                </div>
                                 <p>
                                     <a className='visit_github' href={repo.html_url} target="_blank" rel="noopener noreferrer">
                                         Visit Repository
@@ -111,8 +122,13 @@ const Portfolio = () => {
                             <div key={repo.id} className='project_container'>
                                 <img className='project_img' src={Project} alt="" />
                                 <h2>{repo.name}</h2>
-                                <h4>{repo.created_at.split("T")[0]}</h4>
-
+                                <div className='date_project'>
+                                    <div className='date_project_items'>
+                                        <h4>{repo.created_at.split("T")[0]}</h4>
+                                        <span>/</span>
+                                        <h4>{repo.updated_at.split("T")[0]}</h4>
+                                    </div>
+                                </div>
                                 <p>
                                     <a className='visit_github' href={repo.html_url} target="_blank" rel="noopener noreferrer">
                                         Visit Repository

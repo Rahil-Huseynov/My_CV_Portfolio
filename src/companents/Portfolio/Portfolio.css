@@ -9,6 +9,17 @@
     display: none;
 }
 
+.date_project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date_project_items{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
 #pagination_mobile {
     display: none;
 }
