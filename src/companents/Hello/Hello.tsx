@@ -102,7 +102,7 @@ const Hello: React.FC = () => {
                                         <p className='contact'>SOCIAL</p>
                                         <div className='about_contact'>
                                             <div className='sosial_icon_container'>
-                                                <a href="https://www.instagram.com/rahil_huseynov/" target="_blank"><img className='sosial_icon' src={instagram} alt="instagram" /></a>
+                                                <a href="https://www.instagram.com/_rahilhuseynov/" target="_blank"><img className='sosial_icon' src={instagram} alt="instagram" /></a>
                                                 <a href="https://www.linkedin.com/in/rahil-huseynov/" target="_blank"><img className='sosial_icon' src={linkedin} alt="linkedin" /></a>
                                                 <a href="https://github.com/Rahil-Huseynov/" target="_blank"><img className='sosial_icon' src={github} alt="github" /></a>
                                                 <a href="https://x.com/huseynov_rahil" target="_blank"><img className='sosial_icon' src={twitter} alt="x" /></a>
@@ -152,7 +152,7 @@ const Hello: React.FC = () => {
                                         <p className='contact'>SOCIAL</p>
                                         <div className='about_contact'>
                                             <div className='sosial_icon_container'>
-                                                <a href="https://www.instagram.com/rahil_huseynov/" target="_blank"><img className='sosial_icon' src={instagram} alt="instagram" /></a>
+                                                <a href="https://www.instagram.com/_rahilhuseynov/" target="_blank"><img className='sosial_icon' src={instagram} alt="instagram" /></a>
                                                 <a href="https://www.linkedin.com/in/rahil-huseynov/" target="_blank"><img className='sosial_icon' src={linkedin} alt="linkedin" /></a>
                                                 <a href="https://github.com/Rahil-Huseynov/" target="_blank"><img className='sosial_icon' src={github} alt="github" /></a>
                                                 <a href="https://x.com/huseynov_rahil" target="_blank"><img className='sosial_icon' src={twitter} alt="x" /></a>
