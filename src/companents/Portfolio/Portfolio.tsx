@@ -21,7 +21,7 @@ const Portfolio = () => {
     const { data: repos = [] } = useGetUserReposQuery(username);
     const formattedDate = (dateString: string) => {
         const parts = dateString.split("-");
-        return `${parts[2]}/${parts[1]}/${parts[0]}`;
+        return `${parts[2]}.${parts[1]}.${parts[0]}`;
     };
     return (
         <>
