@@ -19,6 +19,10 @@ interface Repo {
 const Portfolio = () => {
     const username = 'Rahil-Huseynov';
     const { data: repos = [] } = useGetUserReposQuery(username);
+    const formattedDate = (dateString: string) => {
+        const parts = dateString.split("-");
+        return `${parts[2]}/${parts[1]}/${parts[0]}`;
+    };
     return (
         <>
             <section id='PORTFOLIO'>
@@ -44,9 +48,9 @@ const Portfolio = () => {
                 <div>
                     <Swiper
                         className={"slider"}
-                        modules={[Autoplay,Pagination]}
+                        modules={[Autoplay, Pagination]}
                         slidesPerView={3}
-                        pagination={{ clickable: true }} 
+                        pagination={{ clickable: true }}
                         autoplay={{ delay: 3000, disableOnInteraction: false }}
                         loop={true}
                         breakpoints={{
@@ -63,9 +67,9 @@ const Portfolio = () => {
                                         <h2>{repo.name}</h2>
                                         <div className='date_project'>
                                             <div className='date_project_items'>
-                                                <h4>{repo.created_at.split("T")[0]}</h4>
+                                                <h4>{formattedDate(repo.created_at.split("T")[0])}</h4>
                                                 <span>/</span>
-                                                <h4>{repo.updated_at.split("T")[0]}</h4>
+                                                <h4>{formattedDate(repo.updated_at.split("T")[0])}</h4>
                                             </div>
                                         </div>
                                         <p>
