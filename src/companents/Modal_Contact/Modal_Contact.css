@@ -150,7 +150,6 @@
     .modal_content {
         width: 600px;
         overflow: auto;
-        height: 600px;
     }
 
     .message_Modal {
@@ -165,7 +164,6 @@
     .modal_content {
         width: 800px;
         overflow: auto;
-        height: 600px;
     }
 
     .message_Modal {
