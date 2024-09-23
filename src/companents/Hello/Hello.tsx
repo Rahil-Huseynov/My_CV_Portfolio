@@ -33,12 +33,15 @@ const Hello: React.FC = () => {
             document.body.classList.remove('no-scroll');
         }
     }, [showModal, isNavbarOpen]);
+    const refresh  = ()=>{
+        window.location.reload()
+    } 
     return (
         <>
             <header id='header_hello'>
                 <div className='header_container'>
                     <div className='my_name_container'>
-                        <p className='my_name'>Rahil Huseynov<span className='point'>.</span></p>
+                        <p onClick={refresh} className='my_name'>Rahil Huseynov<span className='point'>.</span></p>
                     </div>
                     <div className='navbar_container'>
                         <ul className='navbar_items'>
