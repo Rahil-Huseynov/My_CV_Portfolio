@@ -1,4 +1,4 @@
-import photo from '../../assets/image.jpg';
+import photo from '../../assets/image.png';
 import burger from '../../assets/burger.png';
 import instagram from '../../assets/instagram.png';
 import github from '../../assets/github.png';
