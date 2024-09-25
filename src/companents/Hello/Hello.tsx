@@ -45,11 +45,11 @@ const Hello: React.FC = () => {
                     </div>
                     <div className='navbar_container'>
                         <ul className='navbar_items'>
-                            <li className='nav_items'><a className='link_nav' href="#Hello">HELLO</a></li>
-                            <li className='nav_items'><a className='link_nav' href="#SKILLS">SKILLS</a></li>
-                            <li className='nav_items'><a className='link_nav' href="#EDUCATION">EDUCATION</a></li>
-                            <li className='nav_items'><a className='link_nav' href="#PORTFOLIO">PORTFOLIO</a></li>
-                            <li className='nav_items'><a className='link_nav' href="#CONTACTME">CONTACT ME</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#Hello" rel="nofollow">HELLO</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#SKILLS" rel="nofollow">SKILLS</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#EDUCATION" rel="nofollow">EDUCATION</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#PORTFOLIO" rel="nofollow">PORTFOLIO</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#CONTACTME" rel="nofollow">CONTACT ME</a></li>
                         </ul>
                     </div>
                     <div className='burger_container'>
@@ -65,11 +65,11 @@ const Hello: React.FC = () => {
                                 </div>
                                 <div>
                                     <ul className='navbar_items_mobile'>
-                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#Hello">HELLO</a></li>
-                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#SKILLS">SKILLS</a></li>
-                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#EDUCATION">EDUCATION</a></li>
-                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#PORTFOLIO">PORTFOLIO</a></li>
-                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#CONTACTME">CONTACT ME</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#Hello" rel="nofollow">HELLO</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#SKILLS" rel="nofollow">SKILLS</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#EDUCATION" rel="nofollow">EDUCATION</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#PORTFOLIO" rel="nofollow">PORTFOLIO</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#CONTACTME" rel="nofollow">CONTACT ME</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -91,24 +91,24 @@ const Hello: React.FC = () => {
                                 <div className='about_contact'>
                                     <div className='contact_data'>
                                         <p className='contact'>PHONE</p>
-                                        <a className='link_style_my_info' href="tel:+994517108246" target="_blank"> <p className='contact_answer'>+994(51) - 710 - 82 - 46</p></a>
+                                        <a className='link_style_my_info' href="tel:+994517108246" target="_blank"> <p className='contact_answer'rel="nofollow">+994(51) - 710 - 82 - 46</p></a>
                                     </div>
                                     <div className='contact_data'>
                                         <p className='contact'>EMAIL</p>
-                                        <a className='link_style_my_info' href="mailto:huseynov.rahil.05@gmail.com" target="_blank"> <p className='contact_answer'>huseynov.rahil.05@gmail.com</p></a>
+                                        <a className='link_style_my_info' href="mailto:huseynov.rahil.05@gmail.com" target="_blank"> <p className='contact_answer' rel="nofollow">huseynov.rahil.05@gmail.com</p></a>
                                     </div>
                                     <div className='contact_data'>
                                         <p className='contact'>ADDRESS</p>
-                                        <a className='link_style_my_info' href="https://www.google.com/maps?q=Baku,+Azerbaijan" target="_blank"><p className='contact_answer'>Baku, Azerbaijan</p></a>
+                                        <a className='link_style_my_info' href="https://www.google.com/maps?q=Baku,+Azerbaijan" target="_blank"><p className='contact_answer' rel="nofollow">Baku, Azerbaijan</p></a>
                                     </div>
                                     <div className='contact_data'>
                                         <p className='contact'>SOCIAL</p>
                                         <div className='about_contact'>
                                             <div className='sosial_icon_container'>
-                                                <a href="https://www.instagram.com/_rahilhuseynov/" target="_blank"><img className='sosial_icon' src={instagram} alt="instagram" /></a>
-                                                <a href="https://www.linkedin.com/in/rahil-huseynov/" target="_blank"><img className='sosial_icon' src={linkedin} alt="linkedin" /></a>
-                                                <a href="https://github.com/Rahil-Huseynov/" target="_blank"><img className='sosial_icon' src={github} alt="github" /></a>
-                                                <a href="https://x.com/huseynov_rahil" target="_blank"><img className='sosial_icon' src={twitter} alt="x" /></a>
+                                                <a href="https://www.instagram.com/_rahilhuseynov/" target="_blank" rel="nofollow"><img className='sosial_icon' src={instagram} alt="instagram" /></a>
+                                                <a href="https://www.linkedin.com/in/rahil-huseynov/" target="_blank" rel="nofollow"><img className='sosial_icon' src={linkedin} alt="linkedin" /></a>
+                                                <a href="https://github.com/Rahil-Huseynov/" target="_blank" rel="nofollow"><img className='sosial_icon' src={github} alt="github" /></a>
+                                                <a href="https://x.com/huseynov_rahil" target="_blank" rel="nofollow"><img className='sosial_icon' src={twitter} alt="x" /></a>
                                             </div>
                                         </div>
                                     </div>
@@ -116,12 +116,12 @@ const Hello: React.FC = () => {
                             </div>
                             <div className='download_container'>
                                 <button className='contact_me' onClick={handleOpenModal}>CONTACT ME</button>
-                                <a className='Download_CV' href={my_cv} download>Download CV</a>
+                                <a className='Download_CV' href={my_cv} download rel="nofollow">Download CV</a>
                             </div>
                         </div>
                     </div>
                     <div className='photo_container'>
-                        <img className='photo' src={photo} alt="" />
+                        <img className='photo' src={photo} alt="photo" />
                     </div>
                 </div>
             </section>
@@ -129,7 +129,7 @@ const Hello: React.FC = () => {
             <section id='Hello' className='mobile-hello'>
                 <div className='first_section_container'>
                     <div className='photo_container'>
-                        <img className='photo' src={photo} alt="" />
+                        <img className='photo' src={photo} alt="photo" />
                     </div>
                     <div className='section_my_about_container'>
                         <div>
@@ -155,10 +155,10 @@ const Hello: React.FC = () => {
                                         <p className='contact'>SOCIAL</p>
                                         <div className='about_contact'>
                                             <div className='sosial_icon_container'>
-                                                <a href="https://www.instagram.com/_rahilhuseynov/" target="_blank"><img className='sosial_icon' src={instagram} alt="instagram" /></a>
-                                                <a href="https://www.linkedin.com/in/rahil-huseynov/" target="_blank"><img className='sosial_icon' src={linkedin} alt="linkedin" /></a>
-                                                <a href="https://github.com/Rahil-Huseynov/" target="_blank"><img className='sosial_icon' src={github} alt="github" /></a>
-                                                <a href="https://x.com/huseynov_rahil" target="_blank"><img className='sosial_icon' src={twitter} alt="x" /></a>
+                                                <a href="https://www.instagram.com/_rahilhuseynov/" target="_blank" rel="nofollow"><img className='sosial_icon' src={instagram} alt="instagram" /></a>
+                                                <a href="https://www.linkedin.com/in/rahil-huseynov/" target="_blank" rel="nofollow"><img className='sosial_icon' src={linkedin} alt="linkedin" /></a>
+                                                <a href="https://github.com/Rahil-Huseynov/" target="_blank" rel="nofollow"><img className='sosial_icon' src={github} alt="github" /></a>
+                                                <a href="https://x.com/huseynov_rahil" target="_blank" rel="nofollow"><img className='sosial_icon' src={twitter} alt="x" /></a>
                                             </div>
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@ const Hello: React.FC = () => {
                             </div>
                             <div className='download_container'>
                                 <button className='contact_me' onClick={handleOpenModal}>CONTACT ME</button>
-                                <a className='Download_CV' href={my_cv} download>Download CV</a>
+                                <a className='Download_CV' href={my_cv} download rel="nofollow">Download CV</a>
                             </div>
                         </div>
                     </div>

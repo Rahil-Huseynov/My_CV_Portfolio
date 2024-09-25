@@ -29,7 +29,7 @@ const Portfolio = () => {
                 <div className='portfolio_container'>
                     <div className='Portfolio_header_container'>
                         <div>
-                            <img className='portfolio_icon' src={portfolio} alt="" />
+                            <img className='portfolio_icon' src={portfolio} alt="portfolio_icon" />
                         </div>
                         <div>
                             <h2 className='portfolio_word'>Portfolio<span className='point'>.</span></h2>
@@ -37,7 +37,7 @@ const Portfolio = () => {
                     </div>
                     <div className='Portfolio_header_container'>
                         <div>
-                            <img className='portfolio_icon' src={MyProject} alt="" />
+                            <img className='portfolio_icon' src={MyProject} alt="portfolio_icon" />
                         </div>
                         <div>
                             <h2 className='portfolio_word'>My Project<span className='point'>.</span></h2>
@@ -63,7 +63,7 @@ const Portfolio = () => {
                             <SwiperSlide key={repo.id}>
                                 <div className="slider-items">
                                     <div className='project_container'>
-                                        <img className='project_img' src={Project} alt="" />
+                                        <img className='project_img' src={Project} alt="project_img" />
                                         <h2>{repo.name}</h2>
                                         <div className='date_project'>
                                             <div className='date_project_items'>
@@ -73,7 +73,7 @@ const Portfolio = () => {
                                             </div>
                                         </div>
                                         <p>
-                                            <a className='visit_github' href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                                            <a className='visit_github' href={repo.html_url} target="_blank" rel="noopener noreferrer nofollow">
                                                 Visit Repository
                                             </a>
                                         </p>

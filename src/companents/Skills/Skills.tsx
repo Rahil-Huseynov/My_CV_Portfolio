@@ -16,7 +16,7 @@ const Skills = () => {
                 <div className='skills_container'>
                     <div className='skills_header_container'>
                         <div>
-                            <img className='skills_icon' src={skills} alt="" />
+                            <img className='skills_icon' src={skills} alt="skills_icon" />
                         </div>
                         <div>
                             <h2 className='skills'>Skills<span className='point'>.</span></h2>
