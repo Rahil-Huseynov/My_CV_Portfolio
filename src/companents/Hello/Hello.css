@@ -6,6 +6,11 @@ html {
     cursor: pointer;
 }
 
+.link_style_my_info{
+  text-decoration: none;
+  color: #000;
+}
+
 .link_nav {
     text-decoration: none;
     color: #252525;

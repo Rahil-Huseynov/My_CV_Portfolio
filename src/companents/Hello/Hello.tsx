@@ -33,9 +33,9 @@ const Hello: React.FC = () => {
             document.body.classList.remove('no-scroll');
         }
     }, [showModal, isNavbarOpen]);
-    const refresh  = ()=>{
+    const refresh = () => {
         window.location.reload()
-    } 
+    }
     return (
         <>
             <header id='header_hello'>
@@ -91,15 +91,15 @@ const Hello: React.FC = () => {
                                 <div className='about_contact'>
                                     <div className='contact_data'>
                                         <p className='contact'>PHONE</p>
-                                        <p className='contact_answer'>+994(51)-710-82-46</p>
+                                        <a className='link_style_my_info' href="tel:+994517108246" target="_blank"> <p className='contact_answer'>+994(51) - 710 - 82 - 46</p></a>
                                     </div>
                                     <div className='contact_data'>
                                         <p className='contact'>EMAIL</p>
-                                        <p className='contact_answer'>huseynov.rahil.05@gmail.com</p>
+                                        <a className='link_style_my_info' href="mailto:huseynov.rahil.05@gmail.com" target="_blank"> <p className='contact_answer'>huseynov.rahil.05@gmail.com</p></a>
                                     </div>
                                     <div className='contact_data'>
                                         <p className='contact'>ADDRESS</p>
-                                        <p className='contact_answer'>Baku, Azerbaijan</p>
+                                        <a className='link_style_my_info' href="https://www.google.com/maps?q=Baku,+Azerbaijan" target="_blank"><p className='contact_answer'>Baku, Azerbaijan</p></a>
                                     </div>
                                     <div className='contact_data'>
                                         <p className='contact'>SOCIAL</p>
