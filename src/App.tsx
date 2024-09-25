@@ -1,11 +1,11 @@
 import './App.css';
-import Hello from './companents/Hello/Hello';
-import Skills from './companents/Skills/Skills';
-import Education from './companents/Education/Education';
-import Portfolio from './companents/Portfolio/Portfolio';
-import Contact from './companents/Contact/Contact';
-import Footer from './companents/Footer/Footer';
+import Skills from './components/Skills/Skills';
+import Education from './components/Education/Education';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import { useEffect } from 'react';
+import Info from './components/Info/Info';
 
 
 const App: React.FC = () => {
@@ -24,7 +24,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <Hello />
+      <Info />
       <Skills />
       <Education />
       <Portfolio />

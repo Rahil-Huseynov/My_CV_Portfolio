@@ -5,11 +5,11 @@ import github from '../../assets/github.png';
 import twitter from '../../assets/twitter.png';
 import linkedin from '../../assets/linkedin.png';
 import my_cv from '../../../public/Rahil_Huseynov_CV.pdf';
-import './Hello.css'
+import './Info.css'
 import { useEffect, useState } from 'react';
 import Modal_Contact from '../Modal_Contact/Modal_Contact';
 
-const Hello: React.FC = () => {
+const Info: React.FC = () => {
     const [showModal, setShowModal] = useState<boolean>(false);
     const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
     const handleOpenModal = (): void => {
@@ -45,7 +45,7 @@ const Hello: React.FC = () => {
                     </div>
                     <div className='navbar_container'>
                         <ul className='navbar_items'>
-                            <li className='nav_items'><a className='link_nav' href="#Hello" rel="nofollow">HELLO</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#INFO" rel="nofollow">INFO</a></li>
                             <li className='nav_items'><a className='link_nav' href="#SKILLS" rel="nofollow">SKILLS</a></li>
                             <li className='nav_items'><a className='link_nav' href="#EDUCATION" rel="nofollow">EDUCATION</a></li>
                             <li className='nav_items'><a className='link_nav' href="#PORTFOLIO" rel="nofollow">PORTFOLIO</a></li>
@@ -65,7 +65,7 @@ const Hello: React.FC = () => {
                                 </div>
                                 <div>
                                     <ul className='navbar_items_mobile'>
-                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#Hello" rel="nofollow">HELLO</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#INFO" rel="nofollow">INFO</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#SKILLS" rel="nofollow">SKILLS</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#EDUCATION" rel="nofollow">EDUCATION</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#PORTFOLIO" rel="nofollow">PORTFOLIO</a></li>
@@ -76,10 +76,10 @@ const Hello: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                <div className='divide'></div>
             </header>
-            <div className='divide'></div>
 
-            <section id='Hello' className='desktop-hello'>
+            <section id='INFO' className='desktop-hello'>
                 <div className='first_section_container'>
                     <div className='section_my_about_container'>
                         <div>
@@ -91,7 +91,7 @@ const Hello: React.FC = () => {
                                 <div className='about_contact'>
                                     <div className='contact_data'>
                                         <p className='contact'>PHONE</p>
-                                        <a className='link_style_my_info' href="tel:+994517108246" target="_blank"> <p className='contact_answer'rel="nofollow">+994(51) - 710 - 82 - 46</p></a>
+                                        <a className='link_style_my_info' href="tel:+994517108246" target="_blank"> <p className='contact_answer' rel="nofollow">+994(51) - 710 - 82 - 46</p></a>
                                     </div>
                                     <div className='contact_data'>
                                         <p className='contact'>EMAIL</p>
@@ -126,7 +126,7 @@ const Hello: React.FC = () => {
                 </div>
             </section>
 
-            <section id='Hello' className='mobile-hello'>
+            <section id='INFO' className='mobile-hello'>
                 <div className='first_section_container'>
                     <div className='photo_container'>
                         <img className='photo' src={photo} alt="photo" />
@@ -141,7 +141,7 @@ const Hello: React.FC = () => {
                                 <div className='about_contact'>
                                     <div className='contact_data'>
                                         <p className='contact'>PHONE</p>
-                                        <a className='link_style_my_info' href="tel:+994517108246" target="_blank"> <p className='contact_answer'rel="nofollow">+994(51) - 710 - 82 - 46</p></a>
+                                        <a className='link_style_my_info' href="tel:+994517108246" target="_blank"> <p className='contact_answer' rel="nofollow">+994(51) - 710 - 82 - 46</p></a>
                                     </div>
                                     <div className='contact_data'>
                                         <p className='contact'>EMAIL</p>
@@ -181,4 +181,4 @@ const Hello: React.FC = () => {
     )
 }
 
-export default Hello
+export default Info
