@@ -19,16 +19,16 @@ const Education = () => {
                         {[
                             {
                                 src: AACU,
-                                title: "Azerbaijan University of Architecture and Construction",
+                                title: "AZERBAIJAN UNIVERSITY OF ARCHITECTURE AND CONSTRUCTION",
                                 degree: "Bachelor",
                                 date: "Sep, 2020 — Jun, 2025",
                                 qualification: "Marketing"
                             },
                             {
                                 src: StepIT,
-                                title: "STEP IT",
+                                title: "STEP IT ACADEMY",
                                 degree: "Course",
-                                date: "Nov, 2023 — Aug, 2024",
+                                date: "Nov, 2023 — Sep, 2024",
                                 qualification: "Front-end Developer"
                             },
                         ].map(edu => (
