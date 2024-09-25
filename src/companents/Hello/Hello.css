@@ -155,6 +155,7 @@ html {
 
     .photo_container {
         display: flex;
+        justify-content: center;
     }
 
     .my_about_text {
@@ -263,6 +264,7 @@ html {
 
     .photo_container {
         display: flex;
+        justify-content: center;
     }
 
     .my_about_text {
@@ -307,7 +309,7 @@ html {
       display: grid;
       min-height: 110vh;
       animation-name: opennavbar;
-      animation-duration: .3s;
+      animation-duration: .5s;
       opacity: 1;
   }
 

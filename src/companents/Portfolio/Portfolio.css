@@ -118,10 +118,6 @@
     padding-bottom: 1rem;
 }
 
-.slider-items:hover {
-    transform: scale(1.1);
-}
-
 #PORTFOLIO {
     padding-top: 1rem;
 }
@@ -149,6 +145,10 @@
         line-height: 1.4;
         font-family: Lato, sans-serif;
 
+    }
+
+    .slider-items:hover {
+        transform: scale(1.1);
     }
 
 }
