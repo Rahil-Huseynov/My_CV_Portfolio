@@ -65,7 +65,7 @@ const Info: React.FC = () => {
                                 </div>
                                 <div>
                                     <ul className='navbar_items_mobile'>
-                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#INFO" rel="nofollow">INFO</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#INFO_Mobile" rel="nofollow">INFO</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#SKILLS" rel="nofollow">SKILLS</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#EDUCATION" rel="nofollow">EDUCATION</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#PORTFOLIO" rel="nofollow">PORTFOLIO</a></li>
@@ -126,7 +126,7 @@ const Info: React.FC = () => {
                 </div>
             </section>
 
-            <section id='INFO' className='mobile-hello'>
+            <section id='INFO_Mobile' className='mobile-hello'>
                 <div className='first_section_container'>
                     <div className='photo_container'>
                         <img className='photo' src={photo} alt="photo" />
