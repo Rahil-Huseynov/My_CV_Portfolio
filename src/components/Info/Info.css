@@ -49,6 +49,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999999;
 }
 
 .modal_content {
@@ -88,7 +89,8 @@ html {
     position: absolute;
     width: 260px;
     text-align: center;
-    background-image: radial-gradient(circle at 44% 13%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 98%,transparent 98%, transparent 100%),radial-gradient(circle at 87% 84%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 46%,transparent 46%, transparent 100%),radial-gradient(circle at 84% 60%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 40%,transparent 40%, transparent 100%),radial-gradient(circle at 21% 32%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 28%,transparent 28%, transparent 100%),radial-gradient(circle at 57% 12%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 34%,transparent 34%, transparent 100%),radial-gradient(circle at 33% 60%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 29%,transparent 29%, transparent 100%),radial-gradient(circle at 3% 11%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 60%,transparent 60%, transparent 100%),radial-gradient(circle at 0% 74%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 87%,transparent 87%, transparent 100%),linear-gradient(45deg, rgb(99, 105, 190),rgb(99, 70, 205));    z-index: 10;
+    background-image: radial-gradient(circle at 44% 13%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 98%,transparent 98%, transparent 100%),radial-gradient(circle at 87% 84%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 46%,transparent 46%, transparent 100%),radial-gradient(circle at 84% 60%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 40%,transparent 40%, transparent 100%),radial-gradient(circle at 21% 32%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 28%,transparent 28%, transparent 100%),radial-gradient(circle at 57% 12%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 34%,transparent 34%, transparent 100%),radial-gradient(circle at 33% 60%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 29%,transparent 29%, transparent 100%),radial-gradient(circle at 3% 11%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 60%,transparent 60%, transparent 100%),radial-gradient(circle at 0% 74%, hsla(237,0%,100%,0.05) 0%, hsla(237,0%,100%,0.05) 87%,transparent 87%, transparent 100%),linear-gradient(45deg, rgb(99, 105, 190),rgb(99, 70, 205));   
+     z-index: 10;
 }
 #header_hello {
   position: sticky;
