@@ -14,7 +14,7 @@ const App: React.FC = () => {
       e.preventDefault();
     };
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'J')) {
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'J')||(e.ctrlKey && e.key === 'p')||(e.ctrlKey && e.key === 's')) {
         e.preventDefault();
       }
     };
