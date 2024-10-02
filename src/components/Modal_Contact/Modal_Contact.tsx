@@ -79,7 +79,6 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
                     setFormData({ name: '', email: '', message: '' });
                     SuccessSendMessage()
                     setTimeout(() => {
-                         window.location.href = "#INFO"
                         window.location.reload();
                     }, 2000); 
                 }).catch(() => {
