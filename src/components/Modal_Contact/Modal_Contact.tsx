@@ -25,11 +25,8 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [captchaError, setCaptchaError] = useState(false);
-    const [IsSuccess, setIsSuccess] = useState(false);
-    const [IsError, setIsError] = useState(false);
-    const [captchaTokenCheck, setcaptchaTokenCheck] = useState(false);
 
-    const SuccessSendMessage = () => toast.success('Send Message', {
+    const SuccessSendMessage = () => toast.success('Message sent successfully', {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -40,7 +37,7 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
         theme: "light",
     });
 
-    const ErrorSendMessage = () => toast.error('Message Could Not Be Sent', {
+    const ErrorSendMessage = () => toast.error('Failed to send message', {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -73,10 +70,6 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
         if (captchaToken) {
             setIsSubmitting(true)
             setCaptchaError(false)
-            if (IsSuccess) {
-                SuccessSendMessage();
-            }
-            setIsSuccess(true)
             emailjs.send('service_7tj7mn8', 'template_ujrngfj', {
                 name: formData.name,
                 email: formData.email,
@@ -84,21 +77,19 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
             }, 'gGfb3RtM9jt5hkhI8')
                 .then(() => {
                     setFormData({ name: '', email: '', message: '' });
+                    SuccessSendMessage()
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 2000); 
                 }).catch(() => {
-                    if (IsError) {
-                        ErrorSendMessage();
-                    }
-                    setIsError(true)
+                    ErrorSendMessage();
                 })
                 .finally(() => {
                     setIsSubmitting(false);
                 });
         } else {
             setCaptchaError(true)
-            if (captchaTokenCheck || !captchaError) {
-                CaptchaCheck();
-            }
-            setcaptchaTokenCheck(true)
+            CaptchaCheck();
         }
 
 
