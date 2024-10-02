@@ -80,7 +80,7 @@ input[type=text] {
 }
 
 .error-captcha {
-    border: 1px solid red;
+    border: 3px solid red;
 }
 
 @media only screen and (min-width: 480px) {

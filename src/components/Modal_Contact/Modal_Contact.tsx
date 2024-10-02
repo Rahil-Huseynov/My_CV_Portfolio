@@ -2,6 +2,9 @@ import { useState } from 'react';
 import './Modal_Contact.css';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from 'react-google-recaptcha';
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface ModalContactProps {
     onClose: () => void;
@@ -22,6 +25,42 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [captchaError, setCaptchaError] = useState(false);
+    const [IsSuccess, setIsSuccess] = useState(false);
+    const [IsError, setIsError] = useState(false);
+    const [captchaTokenCheck, setcaptchaTokenCheck] = useState(false);
+
+    const SuccessSendMessage = () => toast.success('Send Message', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+    });
+
+    const ErrorSendMessage = () => toast.error('Message Could Not Be Sent', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+    });;
+
+    const CaptchaCheck = () => toast.error('Please complete the CAPTCHA', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+    });;
 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -34,6 +73,10 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
         if (captchaToken) {
             setIsSubmitting(true)
             setCaptchaError(false)
+            if (IsSuccess) {
+                SuccessSendMessage();
+            }
+            setIsSuccess(true)
             emailjs.send('service_7tj7mn8', 'template_ujrngfj', {
                 name: formData.name,
                 email: formData.email,
@@ -41,14 +84,21 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
             }, 'gGfb3RtM9jt5hkhI8')
                 .then(() => {
                     setFormData({ name: '', email: '', message: '' });
-                }).finally(() => {
+                }).catch(() => {
+                    if (IsError) {
+                        ErrorSendMessage();
+                    }
+                    setIsError(true)
+                })
+                .finally(() => {
                     setIsSubmitting(false);
-                    window.location.reload()
                 });
-        } 
-        else {
+        } else {
             setCaptchaError(true)
-            alert('Please complete the CAPTCHA');
+            if (captchaTokenCheck || !captchaError) {
+                CaptchaCheck();
+            }
+            setcaptchaTokenCheck(true)
         }
 
 
@@ -85,16 +135,27 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
                                         placeholder='Message'
                                         value={formData.message}
                                         onChange={handleChange}
-                                        required/>
+                                        required />
                                 </div>
                             </div>
                             <div>
                                 <div className='ReCAPTCHA_container'>
-                                    <ReCAPTCHA className={captchaError ? 'error-captcha' : ''} sitekey="6Le32koqAAAAAIyK0ZAx3177bCNWM5GmJrAqoNlL" onChange={handleCaptcha} hl='en'/>
+                                    <ReCAPTCHA className={captchaError ? 'error-captcha' : ''} sitekey="6Le32koqAAAAAIyK0ZAx3177bCNWM5GmJrAqoNlL" onChange={handleCaptcha} hl='en' />
                                 </div>
                                 <div className='button_send_message_modal_container'>
                                     <button type='submit' className='send_message'>{isSubmitting ? 'Sending...' : 'Send Message'}</button>
                                     <button className="close_modal_button" onClick={onClose}>BACK TO CV</button>
+                                    <ToastContainer
+                                        position="top-right"
+                                        autoClose={5000}
+                                        hideProgressBar={false}
+                                        newestOnTop={false}
+                                        closeOnClick
+                                        rtl={false}
+                                        pauseOnFocusLoss
+                                        draggable
+                                        pauseOnHover
+                                        theme="light" />
                                 </div>
                             </div>
                         </form>
