@@ -48,6 +48,7 @@ const Info: React.FC = () => {
                             <li className='nav_items'><a className='link_nav' href="#INFO" rel="nofollow">INFO</a></li>
                             <li className='nav_items'><a className='link_nav' href="#SKILLS" rel="nofollow">SKILLS</a></li>
                             <li className='nav_items'><a className='link_nav' href="#EDUCATION" rel="nofollow">EDUCATION</a></li>
+                            <li className='nav_items'><a className='link_nav' href="#DIPLOMA" rel="nofollow">DIPLOMA</a></li>
                             <li className='nav_items'><a className='link_nav' href="#PORTFOLIO" rel="nofollow">PORTFOLIO</a></li>
                             <li className='nav_items'><a className='link_nav' href="#CONTACTME" rel="nofollow">CONTACT ME</a></li>
                         </ul>
@@ -68,6 +69,7 @@ const Info: React.FC = () => {
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#INFO_Mobile" rel="nofollow">INFO</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#SKILLS" rel="nofollow">SKILLS</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#EDUCATION" rel="nofollow">EDUCATION</a></li>
+                                        <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#DIPLOMA" rel="nofollow">DIPLOMA</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#PORTFOLIO" rel="nofollow">PORTFOLIO</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#CONTACTME" rel="nofollow">CONTACT ME</a></li>
                                     </ul>

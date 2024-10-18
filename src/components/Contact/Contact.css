@@ -152,6 +152,17 @@ input[type=text] {
     }
 }
 
+@media only screen and (min-width: 900px) {
+
+
+    .contact_user_info_message_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+}
+
 @media only screen and (min-width: 1130px) {
     .contact_user_info_message_container {
         display: grid;

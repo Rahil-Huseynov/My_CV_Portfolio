@@ -1,0 +1,31 @@
+.my_diploma{
+    width: 500px;
+}
+
+@media only screen and (min-width: 360px) {
+    .my_diploma{
+        width: 330px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+    .my_diploma{
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 720px) {
+    .my_diploma{
+        width: 500px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .my_diploma{
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .my_diploma{
+        width: 500px;
+    }
+}

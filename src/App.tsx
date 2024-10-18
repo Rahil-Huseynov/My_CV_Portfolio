@@ -6,6 +6,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import { useEffect } from 'react';
 import Info from './components/Info/Info';
+import Diploma from './components/Diploma/Diploma';
 
 
 const App: React.FC = () => {
@@ -27,6 +28,7 @@ const App: React.FC = () => {
       <Info />
       <Skills />
       <Education />
+      <Diploma />
       <Portfolio />
       <Contact />
       <Footer />
