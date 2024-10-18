@@ -1,3 +1,20 @@
+/* Keyframes for the image animation */
+@keyframes borderAnimation {
+    0% {
+        box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 1); /* Gold color */
+    }
+    100% {
+        box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+    }
+}
+
+/* Animation class for image */
+.image_animate {
+    animation: borderAnimation 1s infinite; /* Adjust duration and iteration as needed */
+}
 @keyframes modalFadeIn {
     from {
         opacity: 0;

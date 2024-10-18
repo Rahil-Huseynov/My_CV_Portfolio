@@ -45,7 +45,7 @@ const Diploma = () => {
                     </div>
                     <div className='all_my_education_container'>
                         <img 
-                            className='my_diploma' 
+                            className={`my_diploma image_animate`}
                             src={my_diploma} 
                             alt="my_diploma" 
                             onClick={toggleModal} 
