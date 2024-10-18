@@ -5,10 +5,20 @@ import './Diploma.css';
 
 const Diploma = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isClosing, setIsClosing] = useState(false);
 
     const toggleModal = () => {
-        setIsModalOpen(!isModalOpen);
+        if (isModalOpen) {
+            setIsClosing(true);
+            setTimeout(() => {
+                setIsModalOpen(false);
+                setIsClosing(false);
+            }, 500);
+        } else {
+            setIsModalOpen(true);
+        }
     };
+
     useEffect(() => {
         if (isModalOpen) {
             document.body.classList.add('no-scroll');
@@ -47,8 +57,8 @@ const Diploma = () => {
             <div className='divide'></div>
 
             {isModalOpen && (
-                <div className='modal_diploma' onClick={toggleModal}>
-                    <div className='modal_content_diploma' onClick={(e) => e.stopPropagation()}>
+                <div className={`modal_diploma ${isClosing ? 'closing' : ''}`} onClick={toggleModal}>
+                    <div className={`modal_content_diploma ${isClosing ? 'closing' : ''}`} onClick={(e) => e.stopPropagation()}>
                         <span className='close_button_diploma' onClick={toggleModal}>&times;</span>
                         <img src={my_diploma} alt="my_diploma_large" className='modal_image_diploma' />
                     </div>

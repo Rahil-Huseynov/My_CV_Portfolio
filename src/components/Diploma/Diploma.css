@@ -1,3 +1,55 @@
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modalFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes contentScaleIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes contentScaleOut {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+.close_button_diploma {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: red;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: 10px;
+}
+
 .modal_diploma {
     position: fixed;
     top: 0;
@@ -9,6 +61,8 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    opacity: 0;
+    animation: modalFadeIn 0.5s forwards;
 }
 
 .modal_content_diploma {
@@ -16,19 +70,16 @@
     padding: 20px;
     border-radius: 8px;
     position: relative;
+    transform: scale(0);
+    animation: contentScaleIn 0.5s forwards;
 }
 
-.close_button_diploma {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-    background-color: red;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border-radius: 10px;
+.modal_diploma.closing {
+    animation: modalFadeOut 0.5s forwards;
+}
+
+.modal_content_diploma.closing {
+    animation: contentScaleOut 0.5s forwards;
 }
 
 .modal_image_diploma {
@@ -36,6 +87,9 @@
     height: auto;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
 
 @media only screen and (min-width: 360px) {
     .my_diploma {
@@ -53,22 +107,22 @@
     .my_diploma {
         width: 400px;
     }
-    
-.modal_image_diploma {
-    max-width: 100%;
-    height: 300px;
-}
+
+    .modal_image_diploma {
+        max-width: 100%;
+        height: 300px;
+    }
 }
 
 @media only screen and (min-width: 720px) {
     .my_diploma {
         width: 500px;
     }
-    
-.modal_image_diploma {
-    max-width: 100%;
-    height: 450px;
-}
+
+    .modal_image_diploma {
+        max-width: 100%;
+        height: 450px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
