@@ -100,7 +100,7 @@ html {
 #header_hello {
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
   background-color: white;
   margin-left: -1rem;
   margin-right: -1rem;
@@ -209,6 +209,7 @@ html {
   .header_container {
     display: flex;
     justify-content: space-between;
+    padding-top: .5rem;
   }
 
   .navbar_container_mobile.open {
@@ -329,6 +330,7 @@ html {
   .header_container {
     display: flex;
     justify-content: space-between;
+    padding-top: .5rem;
   }
 
   .navbar_container_mobile {
@@ -450,6 +452,7 @@ html {
   .header_container {
     display: flex;
     justify-content: space-between;
+    padding-top: 0rem;
   }
 
   .navbar_container_mobile {
