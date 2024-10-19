@@ -1,5 +1,6 @@
 import photo from '../../assets/image.png';
 import burger from '../../assets/burger.png';
+import burgerdarkmode from '../../assets/burger darkmode.png';
 import instagram from '../../assets/instagram.png';
 import github from '../../assets/github.png';
 import twitter from '../../assets/twitter.png';
@@ -12,6 +13,8 @@ import Modal_Contact from '../Modal_Contact/Modal_Contact';
 const Info: React.FC = () => {
     const [showModal, setShowModal] = useState<boolean>(false);
     const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
+    const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+
     const handleOpenModal = (): void => {
         setShowModal(true);
     };
@@ -26,13 +29,22 @@ const Info: React.FC = () => {
     const toggleNavbarlink = (): void => {
         setIsNavbarOpen(!isNavbarOpen);
     }
+
+
+    const toggleDarkMode = () => {
+        setIsDarkMode((prevMode) => !prevMode);
+    };
+
     useEffect(() => {
         if (showModal || isNavbarOpen) {
             document.body.classList.add('no-scroll');
         } else {
             document.body.classList.remove('no-scroll');
         }
-    }, [showModal, isNavbarOpen]);
+
+        document.body.classList.toggle('dark-mode', isDarkMode);
+    }, [showModal, isNavbarOpen, isDarkMode]);
+
     const refresh = () => {
         window.location.reload()
     }
@@ -52,10 +64,23 @@ const Info: React.FC = () => {
                             <li className='nav_items'><a className='link_nav' href="#PORTFOLIO" rel="nofollow">PORTFOLIO</a></li>
                             <li className='nav_items'><a className='link_nav' href="#CONTACTME" rel="nofollow">CONTACT ME</a></li>
                         </ul>
+                        <div className='darkmode'>
+                            <input
+                                type="checkbox"
+                                className="sr-only"
+                                id="darkmode-toggle"
+                                checked={isDarkMode}
+                                onChange={toggleDarkMode}
+                            />
+                            <label htmlFor="darkmode-toggle" className="toggle">
+                                <span>Toggle dark mode</span>
+                            </label>
+                        </div>
                     </div>
                     <div className='burger_container'>
                         <div className={`'burger' ${!isNavbarOpen ? 'open_burger' : 'close_burger'}`} onClick={toggleNavbar}>
                             <img className='burger_item' src={burger} alt="burger" />
+                            <img className='burger_item_darkmode' src={burgerdarkmode} alt="burger" />
                         </div>
                     </div>
                     <div className={` ${!isNavbarOpen ? 'close' : 'open'}`}>
@@ -64,7 +89,7 @@ const Info: React.FC = () => {
                                 <div className='close_navbar_mobile' onClick={toggleNavbar}>
                                     <p className='close_icon'>&times;</p>
                                 </div>
-                                <div>
+                                <div className='container_mobile_navbar'>
                                     <ul className='navbar_items_mobile'>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#INFO_Mobile" rel="nofollow">INFO</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#SKILLS" rel="nofollow">SKILLS</a></li>
@@ -73,6 +98,18 @@ const Info: React.FC = () => {
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#PORTFOLIO" rel="nofollow">PORTFOLIO</a></li>
                                         <li className='nav_items'><a onClick={toggleNavbarlink} className='link_nav' href="#CONTACTME" rel="nofollow">CONTACT ME</a></li>
                                     </ul>
+                                    <div className='darkmode_mobile'>
+                                        <input
+                                            type="checkbox"
+                                            className="sr-only"
+                                            id="darkmode-toggle"
+                                            checked={isDarkMode}
+                                            onChange={toggleDarkMode}
+                                        />
+                                        <label htmlFor="darkmode-toggle" className="toggle">
+                                            <span>Toggle dark mode</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +214,6 @@ const Info: React.FC = () => {
             </section>
 
             {showModal && <Modal_Contact onClose={handleCloseModal} isActive={showModal} />}
-
             <div className='divide'></div>
         </>
     )

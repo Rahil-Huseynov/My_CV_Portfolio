@@ -80,7 +80,7 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
                     SuccessSendMessage()
                     setTimeout(() => {
                         window.location.reload();
-                    }, 2000); 
+                    }, 2000);
                 }).catch(() => {
                     ErrorSendMessage();
                 })
@@ -108,12 +108,14 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
                             <div className='contact_user_info_message_container'>
                                 <div className='contact_user_info'>
                                     <input type="text"
+                                        className='name-email-message'
                                         name="name"
                                         placeholder='Name'
                                         value={formData.name}
                                         onChange={handleChange}
                                         required />
                                     <input type="email"
+                                        className='name-email-message'
                                         name="email"
                                         placeholder='E-mail'
                                         value={formData.email}
@@ -121,7 +123,7 @@ const Modal_Contact: React.FC<ModalContactProps> = ({ onClose, isActive }) => {
                                         required />
                                 </div>
                                 <div className='textarea_container'>
-                                    <textarea className='message_Modal'
+                                    <textarea className='message_Modal name-email-message'
                                         name="message"
                                         placeholder='Message'
                                         value={formData.message}

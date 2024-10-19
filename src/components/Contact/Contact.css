@@ -22,6 +22,10 @@ input[type=text] {
     transition: all .3s ease;
 }
 
+.divide_darkmode{
+    display: none;
+}
+
 .contact_user_info {
     display: grid;
     gap: 2rem;

@@ -63,25 +63,25 @@ const Contact: React.FC = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (captchaToken) {
-        setIsSubmitting(true)
-        setCaptchaError(false)
-        emailjs.send('service_7tj7mn8', 'template_ujrngfj', {
-            name: formData.name,
-            email: formData.email,
-            message: formData.message,
-        }, 'gGfb3RtM9jt5hkhI8')
-            .then(() => {
-                setFormData({ name: '', email: '', message: '' });
-                SuccessSendMessage();
-                setTimeout(() => {
-                    window.location.reload();
-                }, 2000); 
-            }).catch(() => {
-                ErrorSendMessage();
-            })
-            .finally(() => {
-                setIsSubmitting(false);
-            });
+            setIsSubmitting(true)
+            setCaptchaError(false)
+            emailjs.send('service_7tj7mn8', 'template_ujrngfj', {
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+            }, 'gGfb3RtM9jt5hkhI8')
+                .then(() => {
+                    setFormData({ name: '', email: '', message: '' });
+                    SuccessSendMessage();
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 2000);
+                }).catch(() => {
+                    ErrorSendMessage();
+                })
+                .finally(() => {
+                    setIsSubmitting(false);
+                });
         } else {
             setCaptchaError(true)
             CaptchaCheck()
@@ -111,12 +111,14 @@ const Contact: React.FC = () => {
                         <div className='contact_user_info_message_container'>
                             <div className='contact_user_info'>
                                 <input type="text"
+                                    className='name-email-message'
                                     name="name"
                                     placeholder='Name'
                                     value={formData.name}
                                     onChange={handleChange}
                                     required />
                                 <input type="email"
+                                    className='name-email-message'
                                     name="email"
                                     placeholder='E-mail'
                                     value={formData.email}
@@ -124,7 +126,7 @@ const Contact: React.FC = () => {
                                     required />
                             </div>
                             <div className='textarea_container'>
-                                <textarea className='message'
+                                <textarea className='message name-email-message'
                                     name="message"
                                     placeholder='Message'
                                     value={formData.message}
@@ -155,6 +157,7 @@ const Contact: React.FC = () => {
                 </div>
 
             </section >
+            <div className='divide_darkmode'></div>
         </>
     )
 }
