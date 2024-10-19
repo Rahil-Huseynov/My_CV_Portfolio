@@ -10,18 +10,18 @@ import Diploma from './components/Diploma/Diploma';
 
 
 const App: React.FC = () => {
-  // useEffect(() => {
-  //   const handleContextMenu = (e: MouseEvent) => {
-  //     e.preventDefault();
-  //   };
-  //   const handleKeyDown = (e: KeyboardEvent) => {
-  //     if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'J')||(e.ctrlKey && e.key === 'p')||(e.ctrlKey && e.key === 's')) {
-  //       e.preventDefault();
-  //     }
-  //   };
-  //   document.addEventListener('contextmenu', handleContextMenu);
-  //   document.addEventListener('keydown', handleKeyDown);
-  // }, []);
+  useEffect(() => {
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+    };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'J')||(e.ctrlKey && e.key === 'p')||(e.ctrlKey && e.key === 's')) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('keydown', handleKeyDown);
+  }, []);
 
   return (
     <>
