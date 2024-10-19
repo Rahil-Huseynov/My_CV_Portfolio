@@ -177,7 +177,7 @@ body.dark-mode {
 }
 
 .dark-mode .navbar_container_mobile {
-  background-image: url('https://wallpaper-house.com/data/out/8/wallpaper2you_245709.jpg');
+  background-image: url('../../assets/dark_img_navbar_mobile.jpg');
 }
 
 .navbar_container_mobile {
@@ -190,7 +190,7 @@ body.dark-mode {
   position: absolute;
   width: 260px;
   text-align: center;
-  background-image: url('https://i.pinimg.com/474x/9a/3a/4d/9a3a4dba26def32fdadc2479ec9e3379.jpg');
+  background-image: url('../../assets/light_img_navbar_mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
