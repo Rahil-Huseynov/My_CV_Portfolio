@@ -19,6 +19,10 @@ body.dark-mode {
   cursor: pointer;
 }
 
+.sosial_icon{
+  background-color: white;
+  border-radius: 50%;
+}
 .link_style_my_info {
   text-decoration: none;
   color: #000;
