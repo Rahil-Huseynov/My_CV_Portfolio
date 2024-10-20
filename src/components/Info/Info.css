@@ -182,6 +182,12 @@ body.dark-mode {
   text-align: center;
 }
 
+.divide_header{
+  border: 1px solid rgb(233, 233, 235);
+  width: 100%;
+  margin-top: .5rem;
+}
+
 .close_button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -201,7 +207,7 @@ body.dark-mode {
 }
 
 .dark-mode .navbar_container_mobile {
-  background-image: repeating-linear-gradient(45deg, rgba(97, 97, 97, 0.1) 0px, rgba(97, 97, 97, 0.1) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, rgb(43, 43, 43), rgb(43, 43, 43));
+  background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, hsl(18,0%,1%),hsl(18,0%,1%));
 }
 
 .navbar_container_mobile {
@@ -691,7 +697,7 @@ background-image: linear-gradient(158deg, rgba(84, 84, 84, 0.03) 0%, rgba(84, 84
   .divide {
     border: 1px solid rgb(233, 233, 235);
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   .my_name {

@@ -115,7 +115,7 @@ const Info: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className='divide'></div>
+                <div className='divide_header'></div>
             </header>
 
             <section id='INFO' className='desktop-hello'>
