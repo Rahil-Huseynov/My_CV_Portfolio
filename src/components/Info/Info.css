@@ -110,6 +110,23 @@ body.dark-mode {
 
 }
 
+.close_button_diploma{
+  color: white;
+}
+
+.dark-mode #header_hello{
+  background-color: #252525;
+}
+.dark-mode .modal_content_diploma {
+  background-color: #252525;
+}
+#header_hello {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+
 .link_nav:hover {
   text-decoration: underline;
   color: #337ab7;
@@ -314,7 +331,7 @@ body.dark-mode {
     padding-top: .5rem;
   }
 
-  .dark-mode .modal_content{
+  .dark-mode .modal_content {
     background-color: #252525;
   }
 
@@ -494,7 +511,7 @@ body.dark-mode {
     margin-top: -4rem;
   }
 
- 
+
   .close_navbar_mobile {
     display: flex;
     justify-content: right;
