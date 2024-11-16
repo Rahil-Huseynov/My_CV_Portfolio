@@ -7,6 +7,14 @@ body.dark-mode {
   color: white;
 }
 
+.sosial_icon{
+  transition: transform .7s ease-in-out;
+}
+
+.sosial_icon:hover{
+  transform: rotate(360deg);
+}
+
 .burger_item_darkmode {
   display: none;
 }

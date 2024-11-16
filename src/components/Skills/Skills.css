@@ -43,6 +43,14 @@
         display: grid;
         place-items: center;
     }
+
+    .my_skills_container {
+        transition: transform .2s ease-in-out;
+    }
+
+    .my_skills_container:hover {
+        transform: scale(1.05);
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -56,5 +64,13 @@
 
     .all_my_skills_container {
         display: grid;
+    }
+
+    .my_skills_container {
+        transition: transform .2s ease-in-out;
+    }
+
+    .my_skills_container:hover {
+        transform: scale(1.05);
     }
 }
