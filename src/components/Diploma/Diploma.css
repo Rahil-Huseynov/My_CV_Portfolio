@@ -1,19 +1,17 @@
-/* Keyframes for the image animation */
 @keyframes borderAnimation {
     0% {
         box-shadow: 0 0 0px rgba(255, 255, 255, 0);
     }
     50% {
-        box-shadow: 0 0 10px rgba(255, 215, 0, 1); /* Gold color */
+        box-shadow: 0 0 10px rgba(255, 215, 0, 1); 
     }
     100% {
         box-shadow: 0 0 0px rgba(255, 255, 255, 0);
     }
 }
 
-/* Animation class for image */
 .image_animate {
-    animation: borderAnimation 1s infinite; /* Adjust duration and iteration as needed */
+    animation: borderAnimation 1s infinite; 
 }
 @keyframes modalFadeIn {
     from {
@@ -153,3 +151,11 @@
         width: 500px;
     }
 }
+
+.all_my_education_container{
+    transition: transform .4s ease-in-out;
+  }
+  
+  .all_my_education_container:hover{
+    transform: scale(1.1);
+  }
