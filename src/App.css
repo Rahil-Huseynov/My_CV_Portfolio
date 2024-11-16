@@ -294,3 +294,14 @@
 button:hover{
   cursor: pointer;
 }
+
+.content-section {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: all 0.5s ease-out;
+}
+
+.content-section.visible {
+  opacity: 1;
+  transform: translateY(50);
+}
