@@ -44,11 +44,11 @@
         place-items: center;
     }
 
-    .my_skills_container {
+    .my_skills_container_style {
         transition: transform .2s ease-in-out;
     }
 
-    .my_skills_container:hover {
+    .my_skills_container_style:hover {
         transform: scale(1.05);
     }
 }
@@ -66,11 +66,11 @@
         display: grid;
     }
 
-    .my_skills_container {
+    .my_skills_container_style {
         transition: transform .2s ease-in-out;
     }
 
-    .my_skills_container:hover {
+    .my_skills_container_style:hover {
         transform: scale(1.05);
     }
 }

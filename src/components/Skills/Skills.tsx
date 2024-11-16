@@ -33,7 +33,7 @@ const Skills = () => {
                             { src: ReactIcon, label: "React" },
                             { src: Redux, label: "Redux" },
                         ].map(skill => (
-                            <div className='my_skills_container' key={skill.label}>
+                            <div className='my_skills_container my_skills_container_style' key={skill.label}>
                                 <img className='icon_my_skills' src={skill.src} alt={skill.label} />
                                 <p>{skill.label}</p>
                             </div>

@@ -152,10 +152,10 @@
     }
 }
 
-.all_my_education_container{
+.all_my_education_container_style{
     transition: transform .4s ease-in-out;
   }
   
-  .all_my_education_container:hover{
-    transform: scale(1.1);
+  .all_my_education_container_style:hover{
+    transform: scale(1.05);
   }

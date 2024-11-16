@@ -43,7 +43,7 @@ const Diploma = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='all_my_education_container'>
+                    <div className='all_my_education_container all_my_education_container_style'>
                         <img 
                             className={`my_diploma image_animate`}
                             src={my_diploma} 
