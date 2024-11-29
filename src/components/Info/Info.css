@@ -1000,6 +1000,9 @@ body.dark-mode {
 
 }
 
+.dark-mode .Download_CV:hover {
+  box-shadow: 10px 5px 5px rgba(248, 248, 255, 0.205);
+}
 
 
 .toggle {

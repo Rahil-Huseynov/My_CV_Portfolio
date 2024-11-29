@@ -6,6 +6,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import { useEffect } from 'react';
 import Info from './components/Info/Info';
+import Diploma from './components/Diploma/Diploma';
 
 
 const App: React.FC = () => {
@@ -71,6 +72,9 @@ const App: React.FC = () => {
       </div>
       <div className="content-section">
         <Education />
+      </div>
+      <div className="content-section">
+        <Diploma />
       </div>
       <div className="content-section">
         <Portfolio />

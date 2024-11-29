@@ -20,8 +20,9 @@
   font-family: Lato, sans-serif;
   font-size: 18px;
 }
-.my_name:hover{
-  cursor:pointer
+
+.my_name:hover {
+  cursor: pointer
 }
 
 .header_container {
@@ -247,7 +248,8 @@
   line-height: 1.66;
   text-transform: uppercase;
 }
-.pagination{
+
+.pagination {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -260,7 +262,7 @@
   padding: 1rem;
   width: 100px;
   color: black;
-  border:none;
+  border: none;
   box-shadow: 10px 5px 5px rgba(51, 51, 255, .2);
 }
 
@@ -269,39 +271,45 @@
   color: white;
   padding: 1rem;
   width: 100px;
-  border:none;
+  border: none;
   box-shadow: 10px 5px 5px rgba(51, 51, 255, .2);
 }
 
-.previous:hover{
+.previous:hover {
   background-color: #04AA6D;
   color: white;
   transition: all .3s ease;
 }
-.next:hover{
+
+.next:hover {
   background-color: #f1f1f1;
   color: black;
   transition: all .3s ease;
 }
 
-.visit_github:hover{
+.visit_github:hover {
   color: #252525;
   background-color: #fff;
   box-shadow: 10px 5px 5px rgba(1, 1, 158, 0.2);
   transition: all .3s ease;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
 .content-section {
   opacity: 0;
-  transform: translateY(0px);
   transition: all 0.5s ease-out;
 }
 
 .content-section.visible {
   opacity: 1;
-  transform: translateY(50);
+}
+
+.content-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
 }
