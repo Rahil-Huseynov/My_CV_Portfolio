@@ -115,7 +115,7 @@
     background: rgb(230, 7, 7);
 }
 .close_modal_button:hover {
-    box-shadow: 10px 5px 5px rgba(51, 51, 255, .2);
+    box-shadow: 10px 5px 5px rgba(243, 0, 0, 0.2);
 }
 
 @media only screen and (min-width: 480px) {
