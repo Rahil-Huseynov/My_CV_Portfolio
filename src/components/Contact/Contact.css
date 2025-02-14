@@ -37,7 +37,6 @@ input[type=text] {
     align-items: center;
     gap: 2rem;
 }
-
 .message::-webkit-scrollbar {
     width: 5px;
 }
@@ -55,6 +54,24 @@ input[type=text] {
 .dark-mode .message::-webkit-scrollbar-thumb {
 background: white;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+.dark-mode::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
 
 .message {
     height: 130px;
