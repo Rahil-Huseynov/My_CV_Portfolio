@@ -22,7 +22,7 @@ input[type=text] {
     transition: all .3s ease;
 }
 
-.divide_darkmode{
+.divide_darkmode {
     display: none;
 }
 
@@ -36,6 +36,24 @@ input[type=text] {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
+}
+
+.message::-webkit-scrollbar {
+    width: 5px;
+}
+
+.message ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.message::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 10px;
+}
+
+.dark-mode .message::-webkit-scrollbar-thumb {
+background: white;
 }
 
 .message {
