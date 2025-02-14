@@ -48,7 +48,7 @@ input[type=text] {
 }
 
 .message::-webkit-scrollbar-thumb {
-    background: blue;
+    background: grey;
     border-radius: 10px;
 }
 
