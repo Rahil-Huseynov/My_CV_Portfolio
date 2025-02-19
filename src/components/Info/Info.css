@@ -101,7 +101,7 @@ body.dark-mode {
   display: block;
   border: 1px solid rgb(233, 233, 235);
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 
 .dark-mode .copyright_container {
@@ -713,6 +713,12 @@ body.dark-mode {
     margin-top: 1.5rem;
   }
 
+  .divide_info{
+    border: 1px solid rgb(233, 233, 235);
+    width: 100%;
+    margin-top: 4.5rem;
+  }
+
   .my_name {
     font-weight: 700;
     font-family: Lato, sans-serif;
@@ -819,6 +825,7 @@ body.dark-mode {
     box-shadow: 10px 5px 5px rgba(51, 51, 255, .2);
     transition: all .3s ease;
     cursor: pointer;
+  transform: scale(1.1);
   }
 
 
@@ -831,6 +838,7 @@ body.dark-mode {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-top: 2rem;
   }
 
   .photo_container {
@@ -1069,4 +1077,92 @@ input:checked~.toggle span {
 
 .darkmode {
   width: 50px;
+}
+
+
+.download-button {
+  position: relative;
+  border-width: 0;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+}
+.download-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 2;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);  
+}
+
+.docs {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 10px;
+  border-radius: 4px;
+  width: 100%;
+  z-index: 1;
+  background-color: #EFEFEF;
+  border: solid 1px #e8e8e82d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    transform: scale(1.1);
+  }
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 75%;
+  max-height: 100%;
+  margin: 0 auto;
+  z-index: -1000;
+  border-radius: 4px;
+  transform: translateX(0%);
+  background-color: #3333FF;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+  transform: translateY(105%);
+  max-width: 100%;
+}
+
+.download svg polyline,
+.download svg line {
+  animation: docs 1s infinite;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
 }
