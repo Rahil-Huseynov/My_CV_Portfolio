@@ -140,7 +140,9 @@ body.dark-mode {
 }
 
 #header_hello {
-  position: sticky;
+  position: fixed;
+  padding-top: .5rem;
+  width: 100%;
   top: 0;
   background-color: white;
   z-index: 999;
@@ -838,7 +840,7 @@ body.dark-mode {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 2rem;
+    padding-top: 5.5rem;
   }
 
   .photo_container {
